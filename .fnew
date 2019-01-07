@@ -5,7 +5,7 @@
             "type": "input"
         },
         {
-            "input_path": "string_replace",
+            "input_path": "app/src/main/res/values/*.xml",
             "string_replace": {
                 "old": "fnew_app_name",
                 "new": "$app_name"
