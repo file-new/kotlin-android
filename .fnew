@@ -5,10 +5,22 @@
             "type": "input"
         },
         {
+            "output_variable": "package_name",
+            "type": "input"
+        },
+        {
             "input_path": "app/src/main/res/values/*.xml",
             "string_replace": {
                 "old": "fnew_app_name",
                 "new": "$app_name"
+            },
+            "type": "file_string_replace"
+        },
+        {
+            "input_path": "app/src/main/java/fnew/fnew/*.kt",
+            "string_replace": {
+                "old": "fnew.fnew",
+                "new": "$package_name"
             },
             "type": "file_string_replace"
         }
