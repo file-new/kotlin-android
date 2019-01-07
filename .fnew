@@ -11,7 +11,7 @@
         {
             "input_variable": "package_name",
             "output_variable": "package_path",
-            "string_prefix": "app/src/main/java",
+            "string_prefix": "app/src/main/java/",
             "string_replace": {
                 "old": ".",
                 "new": "/"
