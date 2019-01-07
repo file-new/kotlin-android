@@ -1,16 +1,16 @@
 {
     "transforms": [
         {
-            "output_variable" : "app_name",
-            "type": "TypeInput"
+            "output_variable": "app_name",
+            "type": "input"
         },
         {
             "input_path": "string_replace",
-            "type": "file_string_replace",
             "string_replace": {
-                "old" : "fnew_app_name",
-                "new" : "$app_name"
-            }
+                "old": "fnew_app_name",
+                "new": "$app_name"
+            },
+            "type": "file_string_replace"
         }
     ]
 }
