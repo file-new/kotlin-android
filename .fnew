@@ -43,6 +43,22 @@
             "type": "file_string_replace"
         },
         {
+            "input_path": "app/build.gradle",
+            "string_replace": {
+                "old": "fnew.fnew",
+                "new": "$package_name"
+            },
+            "type": "file_string_replace"
+        },
+        {
+            "input_path": "app/build.gradle",
+            "string_replace": {
+                "old": "fnewprojectname",
+                "new": "$project_name"
+            },
+            "type": "file_string_replace"
+        },
+        {
             "input_path": "app/src/main/java/fnew/fnew",
             "output_path": "$package_path",
             "type": "file_move"
