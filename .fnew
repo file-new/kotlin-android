@@ -9,6 +9,10 @@
             "type": "input"
         },
         {
+            "output_variable": "application_id_suffix",
+            "type": "input"
+        },
+        {
             "input_variable": "package_name",
             "output_variable": "package_path",
             "string_prefix": "app/src/main/java/",
@@ -53,8 +57,8 @@
         {
             "input_path": "app/build.gradle",
             "string_replace": {
-                "old": "fnewprojectname",
-                "new": "$project_name"
+                "old": "fnewappidsuffix",
+                "new": "$application_id_suffix"
             },
             "type": "file_string_replace"
         },
